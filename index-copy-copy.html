@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الروابط</title>
+    <style>
+        /* تأثير الألوان المتحركة */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 100%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 0%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b, #1e90ff, #00c2ff, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradientAnimation 12s ease infinite;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* الحاوية */
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        /* صورة البروفايل */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        /* اسم المستخدم */
+        .username {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* البايو */
+        .bio {
+            font-size: 16px;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        /* الروابط */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .link {
+            display: block;
+            padding: 12px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .link:hover {
+            background: #ff4b2b;
+            color: white;
+        }
+
+        /* حقوق النشر */
+        .copyright {
+            font-size: 12px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- صورة البروفايل -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALEAvAMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAAB//EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AhoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z" alt="صورة البروفايل" class="profile-pic">
+
+        <!-- اسم المستخدم -->
+        <h2 class="username">@YourUsername</h2>
+
+        <!-- البايو -->
+        <p class="bio">هذا هو البايو الافتراضي، يمكنك تغييره قبل البيع.</p>
+
+        <!-- الروابط -->
+        <div class="links">
+            <a href="https://www.facebook.com/share/1Xv1h5D6bs/" class="link" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/omar._.mostafa_?igsh=bGtpZHducG8ybnRr" class="link" target="_blank">Instagram</a>
+            <a href="indexTikTok.html" class="link">TikTok</a>
+            <a href="indexYouTube.html" class="link">YouTube</a>
+        </div>
+    </div>
+
+    <!-- حقوق النشر -->
+    <div class="copyright">
+        &copy; 2025 جميع الحقوق محفوظة | تم الإنشاء بواسطة [اسمك أو علامتك التجارية]
+    </div>
+
+</body>
+</html>
